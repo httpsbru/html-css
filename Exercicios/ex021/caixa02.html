@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            
+        }
+
+        nav{
+            background-color: rgb(139, 139, 139);
+            padding: 3px;
+            text-align: center; /* coloquei os menus no centro*/
+            box-shadow:  2px 1px 3px rgba(0, 0, 0, 0.548);
+        }
+
+        nav > a {
+        
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 80px; /* espaço entre os links do menu*/
+            
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+            background-color: blue;
+            
+        }
+
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            padding-bottom: 80px; /* coloquei o branco mais pra baixo como eu queria*/
+            border-radius: 20px 0px;
+            box-shadow: 5px 5px 5px 0px  rgb(63, 63, 63);
+        }
+
+        article{
+            background-color: rgb(202, 201, 201);
+            padding: 15px;
+
+        }
+
+        
+        article > aside {
+            background-color: rgb(150, 148, 148);
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+        footer > p{
+            margin: 0px;
+        }
+        div#bola{ /* exemplo de bola */
+            height: 100px;
+            width: 100px;
+            margin: 10px; /*pra nao ficar grudada na div footer e nem do lado esquerdo*/
+            background-color: white;
+            border-radius: 50%;
+
+        }
+      
+    </style>
+</head>
+<body> 
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+        <section id="assuntos">
+            <p>Esportes Politica Tecnologia</p>
+
+        </section>
+
+        <section id="noticias">
+            <article>
+                <h2>Noticia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis ullam esse omnis iste ut error? Iusto velit ratione mollitia alias obcaecati recusandae nostrum odit deserunt perferendis minima unde, voluptate architecto.</p>
+                <aside>
+                    <p>Artigo escrito por José </p>
+                </aside>
+
+            </article>
+            <article>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa minima omnis dolorum, ratione tempora, impedit inventore reprehenderit quo autem cum vel voluptates facere numquam quod nihil libero, saepe a ipsum.</p>
+
+            </article>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>Desenvolvido pelo Curso em Video</p>
+
+    </footer> 
+    <div id="bola"> 
+
+
+    </div>
+</body>
+</html>

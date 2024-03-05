@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 10</title>
+    <style>
+        @font-face {
+            font-family: 'idroid';
+            src:  url(fonts/IDroid.otf) format('opentype');
+        }
+        body{
+            background-color: #84E1AD;
+            margin: 0;
+        
+        }
+        header{
+            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.589), #39CC7A);
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            padding: 5px;
+            margin: 0;
+            text-align: center;
+
+        }
+
+        nav{
+            text-align: left;
+            margin: 5px;
+            
+        }
+        nav > a {
+            color: white;
+            font-size: 14px;
+            text-decoration: none;
+            margin-right: 10px;
+           
+        }
+        main{
+            background-color: white;
+            padding: 0px;
+            width: 820px;
+            margin: auto;
+            padding: 5px;
+            
+            
+        
+        }
+
+        main > article{
+            margin-left: 10px;
+            margin-right: 10px;
+            padding: 1px;
+    
+        }
+
+
+        article > h2{ /*A FONTE ANDROID NAO ESTAVA PEGANDO PORQUE EU NAO ESTAVA COLOCANDO O ARTICLE AQUI!!!!!!*/
+            font-family: 'idroid', 'cursive';
+            font-weight: normal;
+            color: #0e4627;
+            text-align: left;
+        }
+
+       h3{ /*h3 nao precisou porque nao tem outro h3 alem dele fora do article*/
+            font-family: 'idroid', Arial, Helvetica, sans-serif;
+            color: #0e4627;
+            font-size: 16px;
+            background-image: linear-gradient(to right, rgba(18, 231, 142, 0.479), white);
+            color: #0e4627;
+            text-align: left;
+            font-weight: normal;
+        }
+
+        article > p {
+            text-align: left;
+        }
+        .imagem{
+            text-align: center;
+        }
+        .video{
+            text-align: center;
+        }
+
+        .listas{
+            background-color: white;
+            width: 820px;
+            margin: auto;
+            padding: 5px;
+            
+        }
+
+        .listas > article{
+            background-color: #C5EBD6;
+            margin: 1%;
+            
+        
+        }
+
+        .listas ul{
+           display:inline-block;
+           margin: 0 0 0 150px;
+           
+        }
+
+        .listas ul#primeira{
+            margin: 0 0 0 0px;
+        }
+
+        h4{
+            background-color: #2FA866;
+            
+            color: white;
+            padding: 5px;
+            margin: 0%;            
+            
+        }
+
+        .listas article > p{
+            display: block;
+            margin-block-start: 1px;
+            margin-block-end: 0%;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            margin-bottom: 0%;
+            padding-bottom: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 5px;
+    
+        }
+
+        section#extra{
+            padding-bottom: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: px;
+        }
+
+    </style>
+</head>
+<body>
+        <header>
+        <h2>Curiosidades de tecnologia </h2>
+        <p>Tudo aquilo que você sempre quis saber sobre o mundo Tech, em um único lugar</p>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Notícias</a>
+            <a href="#">Curiosidades</a>
+            <a href="#">Fale Conosco</a>
+        </nav>  <!--criei o nav dentro do header-->
+    </header>
+
+    <main>
+        <article>
+            <h2>História do mascote do Android</h2>
+            <p>Provavelmente você sabe que o sistema operacional Android, mantido pelo Google é um dos mais utilizados para dispositivos móveis em todo o mundo. Mas tavez você não saiba que o seu simpático mascote tem um nome e uma história muito curiosa? Pois acompanhe esse artigo para aprender muita coisa sobre esse robozinho.</p>
+
+            <h3>A primeira versão</h3>
+            <p>A primeira tentativa de criar um mascote surgiu em 2007 e veio de um desenvolvedor chamado Dan Morrill. Ele conta que abriu o Inkscape (software livre para vetorização de imagens) e criou sua própria versão de robô. O objetivo era apenas personificar o sistema apenas para a a sua equipe, não existia nenhuma solicitação da empresa para a criação de um mascote.</p>
+            <section>
+                <picture>
+                    <source media="(max-width:600px)" srcset="imagens/dan-droids-pq.png" type="image/png">
+                    <img src="imagens/dan-droids.png" alt="imagem flexivel">   
+                </picture>
+            </section>
+
+            <p>Essa primeira versão bizarra até foi batizada em homenagem ao seu criador: seriam os Dandroids.</p>
+
+            <h3>Surge um novo mascote</h3>
+            <p>A ideia de ter um mascote foi amadurecendo e a missão foi passada para uma profissional da área. A ilustradora Russa Irina Blok, também funcionária do Google, ficou com a missão de representar o pequeno robô de uma maneira mais agradável.</p>
+
+            <picture>
+                <source media="(max-width: 600px)" srcset="imagens/irina-blok-pq.jpg" type="image/jpg">
+                <img src="imagens/irina-blok.jpg" alt="imagem G">
+            </picture>
+
+            <p>A ideia principal da Irina era representar tudo graficamente com poucos traços e de forma mais chapada. O desenho também deveria gerar identificação rápida com quem o olha. Surgiu então o Bugdroid, o novo mascote do Android.
+            </p>
+            
+            <div class="imagem"><img src="imagens/bugdroid.png" alt="imagem"></div>
+            
+
+            <p>A principal inspiração para os traços do novo Bugdroid veio daqueles bonequinhos que ilustram portas de banheiro para indicar o gênero de cada porta. Conta a lenda que a artista estava criando em sua mesa no escritório do Google e olhou para o lado dos banheiros e a identificação foi imediata: simples, limpo, objetivo.</p>
+
+            <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/l2UDgpLz20M?si=Ms4ru33MzeeBfx6W" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                    
+        </article>
+    </main>
+
+    <div class="listas">
+        <article>
+            <h4>Quer aprender mais?</h4>
+            <p>Outro assunto curioso em relação ao Android é que cada versão sempre foi nomeada em homenagem a um doce, em ordem alfabética a partir da versão 1.5 até a 9.0.</p>
+
+            <ul id="primeira">
+                <li>1.5 - Cupcake</li> 
+                <li>1.6 - Donut</li>
+                <li>2.0 - Eclair</li>
+                <li>2.2 - Froyo</li>
+                <li>2.3 - Gingerbread</li>
+                <li>3.0 - Honeycomb</li>
+                <li>4.0 - Ice Cream Sandwich</li>
+            </ul>
+            <ul id="segunda">
+                <li>4.1 - Jelly Bean</li>
+                <li>4.4 - KitKat</li>
+                <li>5.0 - Lolipop</li>
+                <li>6.0 - Marshmallow</li>
+                <li>7.0 - Nougat</li>
+                <li>8.0 - Oreo</li>
+                <li>9.0 - Pie</li>
+            </ul>
+
+            <p>Infelizmente, o Android Q não existiu, pois o Google resolveu pôr fim a essa divertida prática e começou a usar numerações, o que deu origem ao Android 10. <br><p>Acesse aqui o site Android History para conhecer a sequência das versões "adocicadas" e o que cada uma trouxe para o sistema Android.</p>
+        </article>
+
+            <section id="extra">
+                <p>Então é isso! Espero que você tenha gostado do nosso artigo com essa curiosidade sobre o sistema Android e seu simpático mascote.</p>
+
+            </section>
+
+    </div>
+</body>
+</html>
