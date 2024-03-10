@@ -55,21 +55,42 @@ section{
     font-size: 3.5vw;
 }
 
+section > p {
+    padding-bottom: 2em;
+}
+
 .normal{
     background-color: white;
     color: black;
+    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.534);
 }
 
 .imagem {
     background-color: rgb(75, 70, 78);
     color: white;
+    background-attachment: fixed; /*para ficar fixa, efeito paralax*/
 
 }
 
 .imagem > p {
     display: inline-block; /*caixa que se adapta ao tamanho do conteudo*/
-    background-color: rgba(0, 0, 0, 0.336);
+    background-color: rgba(0, 0, 0, 0.473);
+    text-shadow: 1px 1px 0px black;
 }
+
+#img01{
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+    background-size: cover; /*diminuir para caber melhor*/
+
+}
+
+#img02{
+    background-image: url('../imagens/background002.jpg');
+    background-size: cover;
+
+}
+
 
 footer {
     background-color: black;
