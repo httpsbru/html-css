@@ -25,6 +25,17 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        tbody > tr:nth-child(2n){
+            background-color: lightgray;
+        }
+
         .num{
             text-align: right;
         }
@@ -32,11 +43,23 @@
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+        CAPTION
+        THEAD
+            TH, TD, TH
+        TBODY
+            TR, TD, TH
+        TFOOT
+            TR, TD, TH
+    -->
     <table>
+        <caption>População das unidades Federativas</caption>
         <thead>
             <tr>
                 <th>Estado</th>
-                <th>População</th>
+                <th scope="col" style="width: 50px;"> População </th>
             </tr>
 
         </thead>
@@ -123,7 +146,7 @@
             <tr>
                 <td> Rio Grande do Norte</td>
                 <td class="num">3 302 729</td>
-                 class="num"
+        
             </tr>
             <tr>
                 <td>Piauí</td>
