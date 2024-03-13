@@ -17,7 +17,14 @@
         table{
             width: 500px;
             border-collapse: collapse; /*bordas se juntarem*/
+            position: relative;
 
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: black;
         }
 
         td, th{
