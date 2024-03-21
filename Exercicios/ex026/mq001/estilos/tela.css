@@ -33,7 +33,7 @@ menu li{
 
 article{
     width: 600px;
-    display: block;
+    display: block; /*para poder ser centralizado */
     margin: auto;
-    
+
 }
