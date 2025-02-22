@@ -9,7 +9,7 @@ h1{
     color: rgb(10, 182, 110);
 }
 
-h1#principal{
+#principal{
     text-align: center;
     background-color: rgb(10, 182, 110);
     color: white;
